@@ -10,6 +10,8 @@ https://adrians942000.github.io/cantor/
 ## The page looks like this:
 ![Kantor](images/123.PNG)
 
+![Cantor2](images/Kantor.jpg)
+
 ## Depiction
 Hello, this is my first work on https://github.com. I am asking for an honest opinion.
 Regards Adrian.
