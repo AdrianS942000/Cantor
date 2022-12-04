@@ -7,4 +7,4 @@ https://adrians942000.github.io/cantor/
 
 ### And now I'll show you how to do it!!
 
-C:\Users\frondetnd\Desktop\wideo
+![Kantor](images/123.PNG)
