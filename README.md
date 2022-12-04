@@ -3,6 +3,7 @@
 ## In this converter you can convert to PLN currencies such as: EUR, USD, GBP, CHF
 
 ## Demo
+https://adrians942000.github.io/cantor/
 
 
 ## I invite you to test!
