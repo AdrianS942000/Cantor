@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+.body__style {
+    max-width: 350px;
+    max-height: 500px;
+    margin: 50px auto;
+    text-align: center;
+    background-image: url(https://annaberlinska.pl/wp-content/uploads/2020/08/tlo-jasne-szare.jpg);
+    background-size: cover;
+}
+
+.legend {
+    background-color: #e6e4db63;
+    color: rgb(26, 25, 25);
+    border-radius: 20px;
+    padding: 10px;
+}
+.label {
+    background-color:rgba(255, 255, 255, 0.384);
+}
+.select {
+    background-color:rgba(255, 255, 255, 0.384);
+}
+
+.form__button {
+    padding-top: 2px;
+    margin-top: 6px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 400px;
+    height: 30px;
+}
