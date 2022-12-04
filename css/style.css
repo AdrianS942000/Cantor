@@ -2,29 +2,39 @@ html {
     box-sizing: border-box;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: inherit;
 }
+
 .body__style {
     max-width: 350px;
     max-height: 500px;
     margin: 50px auto;
     text-align: center;
-   
+    background-image: url("../images/321.jpg");
+    color: rgb(20, 20, 16);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
 }
 
 .legend {
-    background-color: #e6e4db63;
-    color: rgb(26, 25, 25);
+    background-color: #f8f8f863;
     border-radius: 20px;
     padding: 10px;
 }
+
 .label {
-    background-color:rgba(255, 255, 255, 0.384);
+    background-color: rgba(226, 228, 235, 0.384);
 }
+
 .select {
-    background-color:rgba(255, 255, 255, 0.384);
+    background-color: rgba(255, 255, 255, 0.384);
 }
 
 .form__button {
