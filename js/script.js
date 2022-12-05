@@ -1,17 +1,6 @@
-<<<<<<< HEAD
 {
     console.log("Witam :)");
 
-=======
-console.log("Witam :)");
-
-let formElement = document.querySelector(".js-form");
-let labelElement = document.querySelector(".js-label");
-let sellElement = document.querySelector(".js-sell");
-let plnElement = document.querySelector(".js-pln");
-let resultElement = document.querySelector(".js-result");
-safdsaf
->>>>>>> be95465ef8fde977df658c1c21cd98b598ca8083
 
     const calculateResult = (label, sell) => {
         const EUR = 4.50;
@@ -35,6 +24,7 @@ safdsaf
         }
     };
 const updateResultText = () =>  {resultElement.innerText = `${result.toFixed(2)}`;
+
 }
 
     const onFormSubmit = (event) => {
@@ -53,9 +43,8 @@ const updateResultText = () =>  {resultElement.innerText = `${result.toFixed(2)}
 
         const result  = calculateResult(label, sell);
 
-        updateResultText(resultElement.innerText, result );
+        updateResultText(resultElement.innerText,);
     };
-}
 
 const init = () => {
     const formElement = document.querySelector(".js-form");
