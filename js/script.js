@@ -5,7 +5,7 @@ let labelElement = document.querySelector(".js-label");
 let sellElement = document.querySelector(".js-sell");
 let plnElement = document.querySelector(".js-pln");
 let resultElement = document.querySelector(".js-result");
-
+safdsaf
 
 let EUR = 4.50;
 let CHF = 4.77;
