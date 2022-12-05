@@ -1,40 +1,54 @@
-console.log("Witam :)");
-
-let formElement = document.querySelector(".js-form");
-let labelElement = document.querySelector(".js-label");
-let sellElement = document.querySelector(".js-sell");
-let plnElement = document.querySelector(".js-pln");
-let resultElement = document.querySelector(".js-result");
+{
+    console.log("Witam :)");
 
 
-let EUR = 4.50;
-let CHF = 4.77;
-let USD = 4.51;
-let GBP = 5.45;
+    const calculateResult = (label, sell) => {
+        const EUR = 4.50;
+        const CHF = 4.77;
+        const USD = 4.51;
+        const GBP = 5.45;
+
+        switch (sell) {
+            case "EUR":
+                resultElement.innerHTML = label * EUR;
+
+            case "USD":
+                resultElement.innerHTML = label * USD;
+
+            case "GBP":
+                resultElement.innerHTML = label * GBP;
+
+            case "CHF":
+                resultElement.innerHTML = label * CHF;
+
+        }
+    };
+const updateResultText = () =>  {resultElement.innerText = `${result.toFixed(2)}`;
+}
+
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+
+        const labelElement = document.querySelector(".js-label");
+        const sellElement = document.querySelector(".js-sell");
+        const plnElement = document.querySelector(".js-pln");
+        const resultElement = document.querySelector(".js-result");
 
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+        const sell = sellElement.value;
+        const label = labelElement.value;
+        const pln = plnElement.value;
+        const result = resultElement.value;
 
+        const result  = calculateResult(label, sell);
 
-    let sell = sellElement.value;
-    let label = labelElement.value;
-    let pln = plnElement.value;
-    let result = resultElement.value;
+        updateResultText(resultElement.innerText, result );
+    };
+}
 
-    switch (sell) {
-        case "EUR":
-            resultElement.innerHTML = label * EUR;
-            break;
-        case "USD":
-            resultElement.innerHTML = label * USD;
-            break;
-        case "GBP":
-            resultElement.innerHTML = label * GBP;
-            break;
-        case "CHF":
-            resultElement.innerHTML = label * CHF;
-            break;
-    }
-    resultElement.innerText = `${result.toFixed(2)}`;
-});
+const init = () => {
+    const formElement = document.querySelector(".js-form");
+    formElement.addEventListener("submit", onFormSubmit);
+};
+init();
+}
