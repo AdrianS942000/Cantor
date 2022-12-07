@@ -35,12 +35,12 @@
         const amountElement = document.querySelector(".js-amount");
         const currencyElement = document.querySelector(".js-currency");
 
-        const amount = +amountElement.value
-        const currency = currencyElement.value
+        const amount = +amountElement.value;
+        const currency = currencyElement.value;
 
-        const result = calculateResult(amount, currency)
+        const result = calculateResult(amount, currency);
 
-        updateResultText(amount, result, currency)
+        updateResultText(amount, result, currency);
     };
 
     const init = () => {
